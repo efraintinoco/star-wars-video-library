@@ -27,7 +27,7 @@ function createCharacter(movie) {
 
 const url = new URL(window.location)
 const queryString = new URLSearchParams(url.search)
-fetch(`https://swapi.dev/api/films/${[queryString.get('movie')]}`)
+fetch(`https://swapi.dev/api/films/${queryString.get('movie')}`)
     .then(response => response.json())
     .then(movie => {
         createMovie(movie)
