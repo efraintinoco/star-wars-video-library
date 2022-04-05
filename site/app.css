@@ -3,3 +3,9 @@ img {
     display: grid;
     grid-template-rows: 200px 200px 200px;
 }
+
+body {
+    background-color: rgb(247, 228, 206);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
