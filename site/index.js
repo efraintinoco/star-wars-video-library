@@ -12,11 +12,13 @@ function addMoviesListings(movie) {
     const div = document.createElement("div")
     div.innerHTML = `
     
-    <a href="swapi.dev?film=${movie.title}">${movie.title}</a>
+    <a href="starwars.html?episode_id=${movie.episode_id}">${movie.title}</a>
     <time>${movie.release_date}</time>
     `
+    console.log(movie);
     main.append(div)
 }
+
 
 fetch(url)
     .then(response => {
@@ -30,7 +32,6 @@ fetch(url)
             addMoviesListings(response)
         })
     })
-
 
 
 movieNewHope.src = 'https://m.media-amazon.com/images/I/81RZipc6yOL._AC_SY879_.jpg'
